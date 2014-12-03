@@ -9,7 +9,7 @@ var register = function (directive) {
     throw new Error('System.Directive mapper: application name is not described for directive: "' + directive.name + '"');
   }
 
-  var di = ControllerTranslate(directive.config.controller);
+  var di = ControllerTranslate(directive.config.controller, directive.config.api);
 
   var config = {
     restrict: directive.config.restrict,

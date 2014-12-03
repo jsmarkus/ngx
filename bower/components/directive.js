@@ -72,6 +72,16 @@ class Directive extends Component{
     this.config.templateUrl = template;
     return this;
   }
+
+  api(api){
+    this.config.api = api;
+    return this;
+  }
+
+  key(key){
+    this.config.key = key;
+    return this;
+  }
 }
 
 export default Directive;
